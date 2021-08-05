@@ -1,0 +1,188 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.kakashi{
+    position: relative;
+    display: inline-block;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    text-decoration: none;
+}
+
+.kakashi-main-box{
+    background-image: url(/images/kbackground.jpg);
+    background-size: cover;
+    display: flex;
+    height: 93vh;
+}
+
+.para{
+    color: white;
+    padding: 185px;
+    font-size: 20px;
+}
+
+.neon-effect{
+    position: relative;
+    display: inline-block;
+    color: #2196f3;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    text-decoration: none;
+    overflow: hidden;
+    transition: 0.2s;
+}
+
+.neon-effect:hover{
+    color: #255784;
+    background: #2196f3;
+    box-shadow: 0 0 10px #2196f3, 0 0 40px #2196f3, 0 0 80px #2196f3;
+    transition-delay: 0.1ms;
+}
+
+.neon-button{
+    position: relative;
+    display: inline-block;
+    padding: 15px 30px;
+    color: white;   
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    text-decoration: none;
+    overflow: hidden;
+    transition: 0.2s;
+}
+
+.neon-button:hover{
+    color: #255784;
+    background: #2196f3;
+    box-shadow: 0 0 10px #2196f3, 0 0 40px #2196f3, 0 0 80px #2196f3;
+    transition-delay: 1s;
+}
+
+a span{
+    position: absolute;
+    display: block;
+}
+
+a span:nth-child(1){
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(90deg, transparent, #2196f3);
+}
+
+a:hover span:nth-child(1){
+    left: 100%;
+    transition: 1s;
+}
+
+a span:nth-child(3){
+    bottom: 0;
+    right: -100%;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(270deg, transparent, #2196f3);
+}
+
+a:hover span:nth-child(3){
+    right: 100%;
+    transition: 1s;
+    transition-delay: 0.5s;
+}
+
+a span:nth-child(2){
+    top: -100%;
+    right: 0;
+    width: 2px;
+    height: 100%;
+    background: linear-gradient(180deg, transparent, #2196f3);
+}
+
+a:hover span:nth-child(2){
+    top: 100%;
+    transition: 1s;
+    transition-delay: 0.25s;
+}
+
+a span:nth-child(4){
+    bottom: -100%;
+    left: 0;
+    width: 2px;
+    height: 100%;
+    background: linear-gradient(360deg, transparent, #2196f3);
+}
+
+a:hover span:nth-child(4){
+    bottom: 100%;
+    transition: 1s;
+    transition-delay: 0.75s;
+}
+
+@media only screen and (max-width: 735px) and (min-width: 0px){
+    .kakashi-main-box{
+        background-size: 100% cover;
+        width: 100%;
+        flex-direction: column-reverse;
+    }
+
+    .para{
+        color: white;
+        padding: 70px;
+        font-size: 16px;
+    }
+    
+}
+
+.feed-wall
+{
+    background: rgba(0, 0, 0, 0.7) url(feedback\ wallpaper.png);
+    background-size: cover;
+    background-blend-mode: darken;  
+    width: 675px;
+    border: 5px solid black;
+}
+
+.feed-back
+{
+    background: whitesmoke;
+}
+
+.feed
+{
+    border: 5px solid black;
+    padding: 30px;
+}
+
+.button
+{
+    box-shadow: inset 0 0 0 0 #f9e506;
+    transition: ease-out 0.3s;
+    outline: none;
+    color: white;
+}
+
+.button:hover
+{
+    box-shadow: inset 300px 0 0 0 #f9e506;
+    cursor: pointer;
+    color: #000;
+}
+
+.dropdown-item
+{
+    box-shadow: inset 0 0 0 0 #2196f3;
+    transition: ease-out 0.3s;
+    outline: none;
+    color: black;
+}
+
+.dropdown-item:hover
+{
+    box-shadow: inset 300px 0 0 0 #2196f3;
+    cursor: pointer;
+    color: black;
+}
+
