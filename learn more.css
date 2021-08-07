@@ -12,7 +12,7 @@
 }
 
 .kakashi-main-box{
-    background-image: url(/images/kbackground.jpg);
+    background-image: url(kbackground.jpg);
     background-size: cover;
     display: flex;
     height: 93vh;
